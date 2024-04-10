@@ -4,10 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// Determine base path based on deployment environment
-const base = process.env.NODE_ENV === 'production' ? '/<REPO>/' : '/';
-
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: base,
   plugins: [react()],
 });
